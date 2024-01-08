@@ -13,6 +13,10 @@ namespace HelloWorld
         struct Vector3
         {
             public float x, y, z;
+            public float Length()
+            {
+                return (float)Math.Sqrt(x*x + y*y + z*z);  
+            }
         }
         struct Vector4
         {
@@ -24,8 +28,10 @@ namespace HelloWorld
         }
         static void Main(string[] args)
         {
+            
             //Unity Ex
             Vector3 position;
+            Console.WriteLine(position.x);
             position.x = 0.0f;
             position.y = 0.0f;
             position.z = 0.0f;
